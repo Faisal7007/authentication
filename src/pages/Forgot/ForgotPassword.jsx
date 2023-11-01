@@ -4,6 +4,7 @@ import { database } from '../../firebase/FirebaseConfig'
 
 import {sendPasswordResetEmail} from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
+import backArrow from '../../images/backArrow.jpg'
 
 function Forgot() {
   const [email, setEmail] = useState('')
@@ -25,6 +26,7 @@ function Forgot() {
   return (
     <div className='forgot_password'>
       <div className="main_box">
+        <img src={backArrow} onClick={()=>{navigate(-1)}} className='back_arrow' alt="arrow logo" />
         <div className="title">Forgot Password</div>
 
         <input type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Enter Register Email' />
