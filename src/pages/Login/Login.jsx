@@ -46,10 +46,16 @@ function Login() {
 
             <input name='email' type="email" placeholder='Enter Email' onChange={(e)=>{setEmail(e.target.value)}} value={email} />
             <input name='password' type="password" placeholder='Enter Password' onChange={(e)=>{setPassword(e.target.value)}} value={password} />
+            <div className="forgot_div" onClick={()=>{navigate('/forgotpassword')}}>
+              Forgot Password
+            </div>
             <button onClick={handleLogin} >Login</button>
+            
             <h3>Don't have an account?</h3>
 
             <button onClick={()=>{navigate('/')}} >SignUp</button>
+
+            
 
         </div>
     </div>
