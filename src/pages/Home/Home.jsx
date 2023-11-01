@@ -15,7 +15,7 @@ function Home() {
     }
   return (
     <div className='home'>
-        <h1>Home</h1>
+        <h1>Welcome to Home</h1>
         <button onClick={handleSignOut} >SignOut</button>
     </div>
   )
